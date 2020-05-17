@@ -1,0 +1,16 @@
+ h1{
+    padding-top:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    text-align: center !important;
+    font-size: 80px !important;
+} 
+.cardcontrol{
+    width: 30%;
+}
+.icontec{
+    width: 25px;
+    height: auto;
+    margin-bottom: 10px;
+}
