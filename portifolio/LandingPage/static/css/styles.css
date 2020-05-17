@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: SquareFont;
+    src: url('../fonts/Square.ttf');
+}
+body{
+    background-color: #f5f6f7;
+}
+header{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 36px;
+    padding: 6px;
+    color: #f1faee;
+    justify-content:space-between;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% );
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 11%;
+    font-family: SquareFont;
+}
+#header-img{
+    width: auto;
+    height: 28px;
+    align-self: center;
+}
+#nav-bar{
+    width: 40%;
+}
+#nav-bar ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-right: 30px;
+}
+#nav-bar ul li a{
+    font-family: SquareFont;
+    color: #f1faee;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 2px;
+}
+#nav-bar ul li a:hover{
+    border-style: solid;
+    border-width: 1px;
+}
+main{
+    padding-top: 36px;
+}
+h1{
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:25px;
+    text-align: center;
+    word-spacing: 5px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#form{
+    height: 120px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffbe0b;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+#form label{
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}  
+#email{
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-style: none;
+    border-radius: 3px;
+    padding:5px;
+    margin-bottom: 10px;;
+}
+.btn{
+    width: 30%;
+    height: 30px;
+    border-radius: 3px;
+    border-style: solid;
+    margin-bottom: 10px;
+}
+#cIcon{
+    width: 10%;
+}
+#power{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+}
+#power > article{
+    margin-bottom: 15px;
+    margin-bottom: 50px;
+}
+#power > article > ul{
+    margin-top: 15px;
+    margin-left: 10%;
+}
+.icontext{
+    display: flex;
+    align-items: center;
+
+}
+.littleText{
+    font-size: 9px;
+    margin-left: 80%;
+}
+.icontext p{
+    font-size: 20px;
+    margin-bottom: 10px;
+    align-self: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.articlefas{
+    color: #ffbe0b;
+    margin-right: 30px;
+    margin-left: 15px;
+    font-size:40px;
+}
+#hardwaresvg{
+    height: 35px;
+    stroke: #ffbe0b;
+    stroke-width: 3;
+    margin-right: 40px;
+    margin-left: 15px;
+    fill: none;
+}
+#hardwareList i{
+    width: 20px;
+    margin-right: 10px;
+    text-align: center;
+}
+#typePrograming li img{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+#typePrograming li{
+    display: flex;
+
+}
+iframe{
+    width: 688px;
+    height: 387px;
+}
+h2{
+    text-align: center;
+    margin: 30px;
+}
+#beImpressed{
+    margin-bottom: 30px;
+}
+#price{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.salebox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: #ffbe0b;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+.salebox img{
+   padding: 5px;
+   width: 199px;
+   height: auto;
+}
+.btnPrice{
+    width: 47%;
+    height: 20px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #ffbe0b;
+    margin-bottom: 5px;
+    color: #0b1bff;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.buttonsPri{
+    width: 100%;
+    text-align: center;
+}
+h3{
+    color: #0b1bff;
+}
+
+h4{
+    text-transform: uppercase;
+    color: #0b1bff;
+}
+@media(max-width: 750px){
+    #nav-bar{
+        width: 70%;
+    }
+    .logo{
+        width:17%;
+    }
+    #power > article > ul{
+        margin-left: 25%;
+    }
+    iframe{
+        width: 588px;
+        height: 387px;
+    }
+    #price{
+        width: 70%;
+    }
+    #form{
+        height: 120px;
+        width: 80%;
+    }
+}

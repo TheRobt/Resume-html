@@ -1,0 +1,45 @@
+body{
+    background-color: #222831;
+    padding: 0px;
+    margin: 0px;
+}
+main{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ececec;
+}
+a{
+    color: #f2a365;
+}
+header{
+    text-align: center;
+    padding-bottom:1%;
+}
+header h2{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+figure{
+    text-align: center;
+    margin:5% 20% 5% 20%;
+    padding: 5%;
+    background-color: #30475e;
+}
+figure img {
+    position: relative;
+    width:100%;
+    height: auto;
+    padding-bottom: 5%;
+}
+figure figcaption{
+    font-size:1.5em;
+    padding: 0%;
+}
+section{
+    text-align: justify;
+    margin: 0em 10em 0em 10em;
+    font-size: 1.2em;
+    line-height: 200%;
+}
+h3{
+    text-align: center;
+}

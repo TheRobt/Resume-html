@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1 id="title">which is your preferred service from entertainment?</h1>
+            <p id="description">this is a search about your favorites sites for entertainment with videos! </p>
+        </header>
+        <div class="form-container">
+            <form action="" id="surver-form">
+                <label for="name" id="name-label"> What's your name?
+                    <input type="text" name="" id="name" placeholder="Enter your name" required>
+                </label>
+                <label for="email" id="email-label">And Your email?
+                    <input type="email" name="" id="email" placeholder="Enter your email" required>
+                </label>
+                <label for="number" id="number-label">Could you inform your age?
+                    <input type="number" name="" min="0" max="120" id="number"
+                        placeholder="How many years did you lived?">
+                </label>
+                <label id="radio-label" for="radio-form">Which is your genere?</label>
+                <div id="radio-form">
+                    <label for="male">
+                        <input type="radio" value="male" name="genere" id="male">Male
+                    </label>
+                    <label for="female">
+                        <input type="radio" value="female" name="genere" id="female"> Female
+                    </label>
+                    <label for="ni">
+                        <input type="radio" value="ni" name="genere" id="ni" checked>I Prefer not Inform
+                    </label>
+                </div>
+                <label for="dropdown">
+                    Which entertainment is your preferred?
+                    <select name="" id="dropdown">
+                        <option value="">Choice</option>
+                        <option value="">Youtube</option>
+                        <option value="">Netflix</option>
+                        <option value="">Amazon Prime</option>
+                        <option value="">Crunchroll</option>
+                        <option value="">Deezer</option>
+                        <option value="">Spotfy</option>
+                        <option value="">Anothers</option>
+                    </select>
+                </label>
+                <label>Another service that you use:</label>
+                <div id="check-form">
+                    <label for="Youtube">Youtube
+                        <input type="checkbox" name="Youtube" id="Youtube">
+                    </label>
+                    <label for="Netflix">Netflix
+                        <input type="checkbox" name="Netflix" id="Netflix">
+                    </label>
+                    <label for="Amazon Prime">Amazon Prime
+                        <input type="checkbox" name="Amazon Prime" id="Amazon Prime">
+                    </label>
+                    <label for="Crunchroll">Crunchroll
+                        <input type="checkbox" name="Crunchroll" id="Crunchroll">
+                    </label>
+                    <label for="">Deezer
+                        <input type="checkbox" name="" id="Deezer">
+                    </label>
+                    <label for="Spotify">Spotify
+                        <input type="checkbox" name="Spotify" id="Spotify">
+                    </label>
+                    <label for="Anothers">Anothers
+                        <input type="checkbox" name="Anothers" id="Anothers">
+                    </label>
+                </div>
+                <label for="text-area">
+                    Another service or observation?
+                    <textarea name="" id="text-area" cols="30" rows="5"></textarea>
+                </label>
+                <button id="submit">Submit</button>
+            </form>
+    </main>
+</body>
+</html>

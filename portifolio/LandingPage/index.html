@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP Family</title>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link rel="stylesheet" href="./static/css/styles.css">
+    <script src="https://kit.fontawesome.com/3b54b7ad97.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+        <img src="./static/image/esp32Logo.jpg" alt="ESP32" id="header-img">
+        ESP Family</div>
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="#power" id="nav-link">Power</a></li>
+                <li><a href="#beImpressed" id="nav-link">Be Impressed</a></li>
+                <li><a href="#price" id="nav-link">Pricing</a></li>
+                <li><a href="#form" id="nav-link">Know More</a></li>
+            </ul>
+        </nav>
+    </header>
+        <main>
+            <h1> MCU module that targets a wide variety of applications!</h1>
+            <div class="power" id="power">
+                <article>
+                    <div class="icontext"> 
+                        <i class="fab fa-superpowers articlefas"></i>
+                        <p> ESP32 is a powerful, MCU module that targets a wide variety 
+                            of applications,ranging from low-power sensor networks to 
+                            the most demanding tasks, such as voice encoding, music 
+                            streamingand MP3 decoding.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <div class="icontext">
+                        <img src="./static/image/hardware.svg" id="hardwaresvg" alt="">
+                        <p>ESP32 have a powerful hardware and can be conected in internet,
+                            see all Hardware Specifications:
+                        </p>
+                    </div>
+                    <ul id="hardwareList">
+                        <li><i class="fas fa-wifi"></i>  Wifi - Protocols: 802.11 b/g/n (802.11n up to 150 Mbps)</li>
+                        <li><i class="fab fa-bluetooth-b"></i> Bluetooth* - Protocols: Bluetooth v4.2 BR/EDR and BLE specification </li>
+                        <li><i class="fas fa-microchip"></i> Module interfaces: 2 Cores*, SD card, UART, SPI, SDIO, I2C, LED PWM, Motor PWM*,
+                             I2S,IR *, pulse counter, GPIO, capacitive touch sensor *, ADC, DAC*</li>
+                    </ul>
+                    <p class="littleText">OBS: <br>*: Only in esp32</p>
+                </article>
+                <article>
+                    <div class="icontext">
+                        <i class="fas fa-code articlefas"></i>
+                        <p>The ESP Family can be programmed for a lot of languagens, See!</p>
+                    </div>
+                    <ul id="typePrograming">
+                        <li><img src="./static/image/c-programming-language-seeklogo.com.svg" id="cIcon" alt=""> C Native</li>
+                        <li><img src="./static/image/clock.svg" alt=""> C Native with RTC (Real Time Clock Framework)</li>
+                        <li><img src="./static/image/arduino.svg" alt=""> C++ Arduino</li>
+                        <li><img src="./static/image/python.svg" alt=""> Python with Micropython</li>
+                        <li><img src="./static/image/lua.svg" alt=""> Lua Languagen</li>
+                        <li><img src="./static/image/js.svg" alt=""> Javascript with Espruino</li>
+                    </ul>
+                </article>
+            </div>
+            <section id="beImpressed">
+                <h2>See an application and Be Impressed!</h2>
+                <iframe src="https://www.youtube.com/embed/MicAM_A0_lU" id="video"></iframe>
+            </section>
+            <section id="price">
+                <div class="salebox" id="esp32Price">
+                    <img src="./static/image/ESP32-Node.jpg" alt="" id="32node">
+                    <img src="./static/image/ESP-WROOM.jpg" alt="" style="display: none;" id="32alone">
+                    <div class="buttonsPri">
+                        <button class="btnPrice" onclick="changeimg('32node','32alone','priceText32','3.49')">NodeMcu</button>
+                        <button class="btnPrice" onclick="changeimg('32alone','32node','priceText32','2.14')">StandAlone</button>
+                    </div>
+                    <h3>ESP32</h3>
+                    <h4>For Only:</h4>
+                    <h4 id="priceText32">US $3.49</h4>
+                    <button class="btnPrice">I want Buy!</button>
+                </div>
+                <div class="salebox" id="esp8266Price">
+                    <img src="./static/image/nodemcu.jpg" alt="" id="8266node">
+                    <img src="./static/image/ESP8266.bmp" alt="" style="display: none;" id="8266alone">
+                    <div class="buttonsPri">
+                        <button class="btnPrice" onclick="changeimg('8266node','8266alone','priceText8266','2.19')">NodeMcu</button>
+                        <button class="btnPrice" onclick="changeimg('8266alone','8266node','priceText8266','1.38')">StandAlone</button>
+                    </div>
+                    <h3>ESP8266</h3>
+                    <h4>For Only:</h4>
+                    <h4 id="priceText8266">US $2.19</h4>
+                    <button class="btnPrice">I want Buy!</button>
+                </div>
+            </section>
+            <form action=" https://www.freecodecamp.com/email-submit" id="form">
+                <label>Do you want know more? We'll send you a email!</label>
+                <input type="email" name="" id="email" placeholder="Enter your email!">
+                <input type="submit" value="Get Started" class="btn"></button>
+            </form>
+        </main>
+        <script src="./static/js/script.js"></script>
+</body>
+</html>
